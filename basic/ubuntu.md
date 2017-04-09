@@ -31,9 +31,11 @@ $ sudo apt-get install libgl1-mesa-dev mesa-common-dev
 $ sudo apt-get install libboost-dev libboost-python-dev
 # 针对 PyTango ，好像只需要安装 libboost-python-dev 即可
 
-$ sudo apt-get install swig2.0 swig2.0-doc    # 安装 hdb++/hdbextractor 需要
+$ sudo apt-get install swig2.0 swig2.0-doc    # 安装 hdb++/hdbextractor 需要, 不能使用swig 3.0
 
 $ apt-get install curl openssh-server ca-certificates postfix
+
+$ apt-get install openssl libssl-dev libpcre3 libpcre3-dev
 
 ```
 
@@ -55,9 +57,9 @@ $ apt-get install curl openssh-server ca-certificates postfix
 - 从[清华镜像](https://mirrors.tuna.tsinghua.edu.cn/help/pypi/)下载 python 包
 	- pip download -i https://pypi.tuna.tsinghua.edu.cn/simple pip setuptools
 	- pip download -i https://pypi.tuna.tsinghua.edu.cn/simple pep8 pep257 autopep8
-	- pip download -i https://pypi.tuna.tsinghua.edu.cn/simple ipython six pyparsing python-dateutil cycler pytz decorator path.py
+	- pip download -i https://pypi.tuna.tsinghua.edu.cn/simple ipython six pyparsing python-dateutil cycler pytz decorator path.py nose
 	- pip download -i https://pypi.tuna.tsinghua.edu.cn/simple numpy scipy ply lxml spyder cython Pillow
-	- pip download -i https://pypi.tuna.tsinghua.edu.cn/simple arrow click
+	- pip download -i https://pypi.tuna.tsinghua.edu.cn/simple arrow click mycli
 	- pip download -i https://pypi.tuna.tsinghua.edu.cn/simple futures gevent
 	- pip download -i https://pypi.tuna.tsinghua.edu.cn/simple Sphinx 	# 非常大,不编译文档的话可不安装
 	- pip download -i https://pypi.tuna.tsinghua.edu.cn/simple pytango fandango 
